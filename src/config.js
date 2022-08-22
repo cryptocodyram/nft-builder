@@ -24,15 +24,28 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 1,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+
+      // spinter
+      { name: "base" },
+      { name: "sole" },
+      { name: "ring" },
+      { name: "back-light" },
+      { name: "heel" },
+      { name: "notch" },
+      { name: "upper-ring" },
+      { name: "tounge-01" },
+      { name: "tounge-02" },
+
+      // hashlipsh 
+      // { name: "Background" },
+      // { name: "Eyeball" },
+      // { name: "Eye color" },
+      // { name: "Iris" },
+      // { name: "Shine" },
+      // { name: "Bottom lid" },
+      // { name: "Top lid" },
     ],
   },
 ];
@@ -42,8 +55,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1920,
+  height: 1180,
   smoothing: false,
 };
 
@@ -92,7 +105,7 @@ const preview = {
 };
 
 const preview_gif = {
-  numberOfImages: 5,
+  numberOfImages: 1,
   order: "ASC", // ASC, DESC, MIXED
   repeat: 0,
   quality: 100,
